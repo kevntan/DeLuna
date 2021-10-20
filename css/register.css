@@ -1,0 +1,131 @@
+/*===== FONTS =====*/
+@font-face {
+  font-family: Open Sans;
+  src: url(/font/Open_Sans/OpenSans-Regular.ttf);
+  src: url(/font/Open_Sans/OpenSans-SemiBold.ttf);
+}
+
+/*===== variable CSS =====*/
+:root {
+  --header-height: 2rem;
+
+  /*===== Colors =====*/
+  --first-color: #5B65F5;
+  --first-color-light: #C4C7F5;
+  --dark-color: #0E1026;
+  --white-color: #FBFBFB;
+
+  /*===== Font and typography =====*/
+  --body-font: 'Open Sans', sans-serif;
+  --nav-name-font-size: 1.5rem;
+  --normal-font-size: .938rem;
+
+  /* z index */
+  --z-fixed: 100;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --nav-name-font-size: 1rem;
+    --normal-font-size: 1rem;
+  }
+}
+
+/* base */
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.registrasi {
+  background-color: #0FA3B1;
+  text-align: center;
+  align-items: center;
+  /* max-width: 1024px; */
+  color: var(--white-color);
+  border-radius: 30px;
+  display: grid;
+  margin-left: 1.5rem;
+  grid-template-columns: 100%;
+  margin-right: 1.5rem;
+  margin-bottom: var(--header-height);
+}
+
+.registrasi h1 {
+  margin-top: 40px;
+}
+
+.c-reg {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.username, .password {
+  padding: 5px;
+}
+
+.username input, 
+.password input,
+.email input,
+.age input {
+  border-radius: 20px;
+  width: 270px;
+  height: 40px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.username label {
+  text-align: center;
+  font-size: var(--normal-font-size);
+}
+
+.gender {
+  /* background-color: aqua; */
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.container-gender {
+  display: flex;
+  justify-content: center;
+}
+
+.gender label {
+  margin-right: 10px;
+}
+
+.terms {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+
+button {
+  background-color: var(--first-color);
+  color: var(--white-color);
+  border-radius: 20px;
+  width: 270px;
+  height: 40px;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/register.js"></script>
+  <title>Register</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+  <div class="registrasi">
+
+    <h1>Registration Form</h1>
+
+    <div>
+      <div class="username">
+        <label for="user">Username: </label>
+        <div class="div">
+          <input type="text" name="user" id="user">
+        </div>
+      </div>
+
+      <div class="username">
+        <label for="fullname">Fullname: </label>
+        <div class="div">
+          <input type="text" name="fullname" id="fullname">
+        </div>
+      </div>
+
+      <div class="password">
+        <label for="password">Password: </label>
+        <div class="div">
+          <input type="Password" name="password" id="password">
+        </div>
+      </div>
+
+      <div class="password">
+        <label for="passid">Confirm Password: </label>
+        <div class="div">
+          <input type="Password" name="passid" id="confirmpass">
+        </div>
+      </div>
+
+      <div class="container-gender">
+        <div class="gender">
+          <label id="gender">Gender: </label>
+          <input class="r-gender" type="radio" name="sex" value="Male" id="malegender"><span>Male</span>
+          <input class="r-gender" type="radio" name="sex" value="Female" id="femalegender"><span>Female</span>
+        </div>
+      </div>
+
+      <div class="email">
+        <label for="email">Email: </label>
+        <div class="div">
+          <input type="text" name="email" id="email">
+        </div>
+      </div>
+
+      <div class="age">
+        <label for="age">Age: </label>
+        <div class="div">
+          <input type="number" name="age" id="age">
+        </div>
+      </div>
+
+      <div class="terms">
+        <input class="t-check" type="checkbox" name="terms" id="terms">
+        <label for="terms">I agree to the terms and conditions</label>
+      </div>
+
+      <button type="submit" onclick="validate_data()">SUBMIT</button>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
